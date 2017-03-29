@@ -22,7 +22,6 @@ bundler.transform(babelify.configure({
 
 // on updates recompile
 bundler.on('update', bundle)
-console.log('build...')
 function bundle() {
   return bundler.bundle().on('error', function (err) {
     console.log(err.message)
