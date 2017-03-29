@@ -1,3 +1,7 @@
 body {
   background: black;
-  color: white; }
+  color: white;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex; }
