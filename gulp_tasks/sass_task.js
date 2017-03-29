@@ -3,9 +3,12 @@ const gulp = require('gulp')
 const sass = require('gulp-sass')
 const postcss = require('gulp-postcss')
 const autoprefixer = require('autoprefixer')
+const textRemoveGap = require('postcss-text-remove-gap')
+
 
 gulp.task('sass', function () {
 	let plugins = [
+
 	  autoprefixer({
 			browsers: [
 				'last 3 version',
@@ -13,6 +16,9 @@ gulp.task('sass', function () {
 				'Android >= 4',
 				'ios_saf >= 8'
 			]
+		}),
+		textRemoveGap({
+			prefix: 'rm'
 		})
   ]
 
