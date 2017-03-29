@@ -4,7 +4,8 @@
   "description": "gulp tasks for single web page",
   "main": "gulpfile.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "gulp"
   },
   "repository": {
     "type": "git",
@@ -15,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/jinmayamashita/tablesetting/issues"
   },
-  "homepage": "https://github.com/jinmayamashita/tablesetting#readme"
+  "homepage": "https://github.com/jinmayamashita/tablesetting#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1"
+  }
 }
