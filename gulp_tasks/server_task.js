@@ -20,5 +20,6 @@ gulp.task('server', function() {
     ]
   })
   gulp.watch(config.PATH.src.styles, ['sass'])
+	gulp.watch(config.PATH.src.modules, ['modules'])
   gulp.watch(config.PATH.src.html, ['html'])
 })

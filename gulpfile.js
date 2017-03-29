@@ -8,4 +8,4 @@ global.browserSync = browserSync;
 
 requires('./gulp_tasks')
 
-gulp.task('default', ['html', 'sass', 'server'])
+gulp.task('default', ['resource', 'html', 'sass', 'modules', 'server'])
