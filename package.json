@@ -1,0 +1,19 @@
+{
+  "name": "tablesetting",
+  "version": "1.0.0",
+  "description": "gulp tasks for single web page",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jinmayamashita/tablesetting.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jinmayamashita/tablesetting/issues"
+  },
+  "homepage": "https://github.com/jinmayamashita/tablesetting#readme"
+}
