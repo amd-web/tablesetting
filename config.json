@@ -1,0 +1,10 @@
+{
+	"PATH": {
+		"src": {
+			"modules": "src/modules/index.js",
+			"styles": "src/sass/style.scss",
+			"html": "src/public/index.html"
+		},
+		"dist": "dist"
+	}
+}
