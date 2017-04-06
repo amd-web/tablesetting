@@ -1,0 +1,12 @@
+// mixin
+@mixin hiragino {
+	font-family: $font-hiragino;
+	line-height: 1.4;
+	-rm-text-remove-gap: both;
+}
+
+@mixin yugothic {
+	font-family: $font-yugothic;
+	line-height: 1.4;
+	-rm-text-remove-gap: both;
+}

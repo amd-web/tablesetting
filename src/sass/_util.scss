@@ -1,0 +1,8 @@
+// .u--no-line-height
+//
+// 最初、最後の line-heightだけ 0 にするため作成
+//　＠じんま
+.u--no-line-height {
+	@include yugothic;
+	border: 1px solid cyan;
+}
