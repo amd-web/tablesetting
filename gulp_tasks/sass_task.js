@@ -3,12 +3,13 @@ const gulp = require('gulp')
 const sass = require('gulp-sass')
 const postcss = require('gulp-postcss')
 const autoprefixer = require('autoprefixer')
+const lost = require('lost')
 const textRemoveGap = require('postcss-text-remove-gap')
 
 
 gulp.task('sass', function () {
 	let plugins = [
-
+		lost,
 	  autoprefixer({
 			browsers: [
 				'last 3 version',
