@@ -31,3 +31,24 @@
 @function px-rem($px, $context: $base-font-size) {
   @return #{ $px / $context }rem;
 }
+
+/// @name media
+/// @author jinma <jinma@amd.tokyo>
+/// @description media queries util、 breakpoints でサイズを設定
+///
+/// @example
+/// .class-name {
+/// 	@include media("≤phone") {
+/// 		background: red;
+/// 	}
+///
+/// 	@include media("≥phone") {
+/// 		background: blue;
+/// 	}
+///
+/// 	@include media("≥tablet") {
+/// 		background: green;
+/// 	}
+/// }
+@import "node_modules/include-media/dist/_include-media.scss";
+$breakpoints: (phone: 640px, tablet: 768px);
