@@ -1,25 +1,27 @@
 # tablesetting
 
-全員が同じ環境で作業するため作成
+全員が同じ環境でHTML, CSS, JAVASCRIPT コードを簡単に作成する為、作成した開発環境です。
+Build は Gulp を使用しています。
 
-## 設置方法
+## 設置
 
-この repository を clone してからターミナルで下記のコマンドを入力する
+まずは、本レポジトリを｀clone｀し、ターミナル上で下記のコマンドを入力します。
 
 ```bash
-./go
+$ ./go
 ```
 
-## 便利ツール
-### autoprefixer
-ベンダープレフェックスは自動的に書いてくれる
+### CSS
+基本的にはSCSSで管理しています。
 
-### postcss-text-remove-gap;
-最初、最後の line-heightだけ 0 にしてくれる
+#### source に使用している modules
 
-使用例
-```scss
-.className {
-	-rm-text-remove-gap: both;
-}
-```
+SCSS source には下記の modules を使用しています。
+詳しい内容は `src/demo.scss`, `src/util.scss` コード、または下記のリンクで確認してください。
+- [Autoprefixer](https://github.com/postcss/autoprefixer)
+- [postcss-text-remove-gap](https://github.com/m18ru/postcss-text-remove-gap)
+- [LostGrid](https://github.com/peterramsing/lost)
+- [include-media](https://github.com/eduardoboucas/include-media/)
+
+### JS
+//@todo 説明追加
