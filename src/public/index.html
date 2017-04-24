@@ -77,7 +77,9 @@
 
 			<!-- demo: 上下文字のline-height切りデモ -->
 			<div class="demo-text-util">
-				<code>.u--inecut-cut:  上下の文字を切るけど、line-height は適用</code>
+				<code class="code-description">
+					.u--inecut-cut:  上下の文字を切るけど、line-height は適用
+				</code>
 				<div class="demo-text-util__japanese_block">
 					<h3 class="demo-text-util__title">日本語</h3>
 					<p class="demo-text-util__paragraph u--linecut">
@@ -93,6 +95,62 @@
 				</div>
 			</div>
 
+			<!--
+			lost-utility demo: float colを自動的に clear fix させる
+			@NOTE Android 4.3 以下は対応ができないので注意
+			-->
+			<div class="demo-col-util">
+				<code class="code-description">
+					lost-utility: グリッドレイアウト関連 (container: 800pxの場合、子 div に 1/2、1/4)
+				</code>
+				<div class="demo-col-util__container">
+					<div class="demo-col-util__image demo-col-util__image--col2">
+						<a href="http://placehold.it">
+							<img src="http://placehold.it/400x200/522A64/FFFFFF">
+						</a>
+					</div>
+					<div
+						class="
+						demo-col-util__text
+						demo-col-util__text--background-mud
+						demo-col-util__text--col2">
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+						</p>
+					</div>
+				</div>
+
+				<div class="demo-col-util__container">
+					<div class="demo-col-util__image demo-col-util__image--col4">
+						<a href="http://placehold.it">
+							<img src="http://placehold.it/200x200/FF0065/FFFFFF">
+						</a>
+					</div>
+					<div
+						class="
+						demo-col-util__text
+						demo-col-util__text--background-green
+						demo-col-util__text--col4 ">
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+						</p>
+					</div>
+					<div class="demo-col-util__image demo-col-util__image--col4">
+						<a href="http://placehold.it">
+							<img src="http://placehold.it/200x200/00A3B2/FFFFFF">
+						</a>
+					</div>
+					<div
+						class="
+						demo-col-util__text
+						demo-col-util__text--background-yellow
+						demo-col-util__text--col4 ">
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+						</p>
+					</div>
+				</div>
+			</div>
 		</article>
 		<!-- /content -->
 

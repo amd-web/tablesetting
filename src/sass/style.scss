@@ -7,22 +7,25 @@
 
 }
 
+
+// demo
+//==============================================================================
+.code-description {
+  font-family: $font-yugo;
+  display: block;
+  background: deepskyblue;
+  margin-bottom: 20px;
+  color: white;
+  padding: 5px;
+  border-radius: 8px;
+}
+
 // .demo-text-util
 // [line-cut util] を再現する為
 //==============================================================================
 .demo-text-util {
   background: lightgrey;
   padding: 20px;
-
-  code {
-    font-family: $font-yugo;
-    display: block;
-    background: deepskyblue;
-    margin-bottom: 20px;
-    color: white;
-    padding: 5px;
-    border-radius: 8px;
-  }
 
   &__title {
     font-weight: 900;
@@ -49,5 +52,47 @@
     border: 1px solid darkgrey;
     background: white;
     font-family: Helvetica, Arial;
+  }
+}
+
+// .demo-col-util
+// [lost-utility] を再現する為 (http://lostgrid.org/)
+//==============================================================================
+.demo-col-util {
+  background: lightgrey;
+  padding: 20px;
+
+  &__container {
+    background: white;
+    lost-utility: clearfix;
+    lost-center: 800px;
+
+  }
+  &__image {
+    &--col2 {
+      lost-column: 1/2 0 0;
+    }
+    &--col4 {
+      lost-column: 1/4 0 0;
+    }
+  }
+  &__text {
+    padding: 10px;
+    color: white;
+    &--col2 {
+      lost-column: 1/2 0 0;
+    }
+    &--col4 {
+      lost-column: 1/4 0 0;
+    }
+    &--background-yellow {
+      background-color: #fbe562;
+    }
+    &--background-green {
+      background-color: #a3db05;
+    }
+    &--background-mud {
+      background-color: #766f63;
+    }
   }
 }
