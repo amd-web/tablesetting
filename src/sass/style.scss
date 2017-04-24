@@ -6,3 +6,48 @@
 .hero {
 
 }
+
+// .demo-text-util
+// [line-cut util] を再現する為
+//==============================================================================
+.demo-text-util {
+  background: lightgrey;
+  padding: 20px;
+
+  code {
+    font-family: $font-yugo;
+    display: block;
+    background: deepskyblue;
+    margin-bottom: 20px;
+    color: white;
+    padding: 5px;
+    border-radius: 8px;
+  }
+
+  &__title {
+    font-weight: 900;
+    font-size: 30px;
+    margin-bottom: 20px;
+  }
+
+  &__paragraph {
+    color: #333;
+    border: 1px solid cyan;
+    font-size: 1.3rem;
+  }
+
+  &__japanese_block {
+    padding: 10px;
+    border: 1px solid darkgrey;
+    background: white;
+    margin-bottom: 20px;
+    font-family: $font-yugo;
+  }
+
+  &__english_block {
+    padding: 10px;
+    border: 1px solid darkgrey;
+    background: white;
+    font-family: Helvetica, Arial;
+  }
+}
