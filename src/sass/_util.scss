@@ -5,11 +5,29 @@
 }
 
 /// Function
-/// @TODO function.scss file 作成予定
+///=============================================================================
+/// @name px-vw
+/// @author jinma <jinma@amd.tokyo>
+/// @description px を vw に変換する
+///
+/// @example
+/// .class-name {
+///     px-vw(19px);
+/// }
+@function px-vw($target-px, $display-size) {
+	$vw: ($display-size : 0.0.1);
+  // $vw-context: (640 * .01) * 1px;
+  @return ($target-px / $vw-context) * 1vw;
+}
 
-/// vv
-/// example vv(19px);
-@function vv($target) {
-  $vw-context: (640 * .01) * 1px;
-  @return ($target/$vw-context) * 1vw;
+/// @name px-rem
+/// @author jinma <jinma@amd.tokyo>
+/// @description px を rem に変換する
+///
+/// @example
+/// .class-name {
+///     px-rem(19px);
+/// }
+@function px-rem($px $context: $base-font-size) {
+  @return #{ $px / context }rem;
 }
