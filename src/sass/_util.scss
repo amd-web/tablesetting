@@ -28,6 +28,6 @@
 /// .class-name {
 ///     px-rem(19px);
 /// }
-@function px-rem($px $context: $base-font-size) {
-  @return #{ $px / context }rem;
+@function px-rem($px, $context: $base-font-size) {
+  @return #{ $px / $context }rem;
 }
